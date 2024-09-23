@@ -9,7 +9,9 @@
 <body>
     <div class="container">
         <h1>Tic Tac Toe</h1>
+        <!-- This div will display the current game status (whose turn it is, or if there is a winner/draw) -->
         <div id="status">Player X's turn</div>
+        <!-- 3x3 Grid for the Tic Tac Toe game, created using a table. Each cell is marked with a 'data-cell' attribute for easier selection in JavaScript -->
         <table id="game-board">
             <tr>
                 <td data-cell></td>
@@ -27,10 +29,12 @@
                 <td data-cell></td>
             </tr>
         </table>
+        <!-- Scoreboard displaying the score for Player X and Player O. Scores will be dynamically updated -->
         <div id="scoreboard">
             <p>Player X: <span id="score-x">0</span></p>
             <p>Player O: <span id="score-o">0</span></p>
         </div>
+        <!-- Button to reset the game -->
         <button id="reset">Reset Game</button>
     </div>
     <script src="script.js"></script>
