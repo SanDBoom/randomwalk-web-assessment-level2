@@ -1,9 +1,10 @@
+/*Basic CSS reset to remove default margins and paddings*/ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*center the content horizontally and vertically */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -12,7 +13,7 @@ body {
     height: 100vh;
     background-color: #f4f4f4;
 }
-
+/* Container to center the entire game UI */
 .container {
     text-align: center;
 }
@@ -28,21 +29,21 @@ h1 {
 }
 
 table {
-    border-collapse: collapse;
+    border-collapse: collapse;/* Removes extra spaces between table cells */
     margin: 0 auto 20px;
 }
-
+/* Each table cell (the 3x3 grid cells) */
 td {
     width: 100px;
     height: 100px;
     border: 2px solid #000;
-    font-size: 36px;
+    font-size: 36px;/* Size of X and O marks */
     text-align: center;
     cursor: pointer;
     vertical-align: middle;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;/* Smooth background color change on hover */
 }
-
+/* Change background color on hover to provide visual feedback */
 td:hover {
     background-color: #e0e0e0;
 }
@@ -57,7 +58,7 @@ td:hover {
     font-size: 16px;
     cursor: pointer;
 }
-
+/* Media query for responsiveness (adjusts grid size for smaller screens) */
 @media (max-width: 600px) {
     td {
         width: 70px;
